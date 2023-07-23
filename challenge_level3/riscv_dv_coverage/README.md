@@ -3,6 +3,7 @@
 Test generation using riscv-dv
 ```
 run --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow
+cov --dir out_*/ --simulator=pyflow --enable_visualization
 ```
 
 Coverage related information is obtained in the below link:

@@ -12,6 +12,16 @@ https://github.com/chipsalliance/riscv-dv/tree/master/pygen/pygen_src
 # Challenge
 The challenge is to fix the tool problem in generating coverage and make rv32i ISA coverage 100%
 
+The report submitted here does not seem to have 100% coverage due to some limitations of the tool with the pyflow test generator and coverage generation tool. \
+These limitation can be found in the github issues below:-
+
+https://github.com/chipsalliance/riscv-dv/issues/898 \
+https://github.com/chipsalliance/riscv-dv/issues/928 \
+https://github.com/chipsalliance/riscv-dv/issues/781
+
+A KeyError failure was also found when running coverage while running over tests generate with hazard test scenarios. \
+Hence 100% coverage was not found achievable with the current tool version.
+
 # Coverage Report
 
 ```

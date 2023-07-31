@@ -84,7 +84,7 @@
     +instr_cnt=10
     +num_of_sub_program=1
     +directed_instr_1=riscv_loop_instr,20
-  rtl_test: core_base_test
+  rtl_test: corehttps://www.google.com/search?channel=fs&client=ubuntu-sn&q=jira+issues_base_test
 
 - test: riscv_rand_jump_test
   description: >
@@ -95,4 +95,16 @@
     +instr_cnt=10
     +num_of_sub_program=1
     +directed_instr_0=riscv_load_store_rand_instr_stream,8
+  rtl_test: core_base_test
+
+  test: riscv_cov_test
+  description: >
+    Test to create max coverage for instructions on RV32I target
+  iterations: 20
+  gen_test: riscv_instr_base_test
+  gen_opts: >
+    +instr_cnt=3000
+    +num_of_sub_program=0
+    +directed_instr_0=riscv_jal_instr,4
+    +boot_mode=m
   rtl_test: core_base_test

@@ -2,7 +2,7 @@
 
 Test generation using riscv-dv
 ```
-run --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow
+run --target rv32i --test riscv_cov_test --testlist testlist.yaml --simulator pyflow
 cov --dir out_*/ --simulator=pyflow --enable_visualization
 ```
 
@@ -15,6 +15,7 @@ The challenge is to fix the tool problem in generating coverage and make rv32i I
 # Coverage Report
 
 ```
+Output of Coverage for riscv_cov_test
 Groups Coverage Summary
 Total groups in report: 147
 +---------+----------+-----------------------------+
